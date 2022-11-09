@@ -1,0 +1,314 @@
+//custom
+
+.loader {
+  background: $main-color;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h6{
+    margin-top: 40px;
+  }
+}
+.header {
+  height: 600px;
+  margin-bottom: 180px;
+  background: $main-color;
+
+  h1 {
+    a {
+      color: $main-text-color;
+      text-decoration: none;
+    }
+  }
+
+  .about-me {
+    width: 65%;
+  }
+}
+
+.main-headline {
+  font-size: 5vw;
+  font-weight: 900;
+
+  a {
+    z-index: 99;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.throw-line {
+  z-index: 99;
+  text-decoration: none !important;
+  color: $main-text-color;
+  position: relative !important;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  &:hover {
+
+    color: $main-text-color;
+
+    &::after {
+      height: 80%;
+    }
+
+  }
+
+}
+
+.throw-line:after {
+  content: "";
+  position: absolute;
+  background: $line-color;
+  width: 103%;
+  height: 30%;
+  bottom: 6px;
+  left: 0px;
+  z-index: -1;
+  transition: .2s all;
+}
+
+a.nav-link {
+  &:hover {
+    &::after {
+      height: 60%;
+    }
+
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: $line-color;
+    width: 90%;
+    height: 28%;
+    bottom: 11px;
+    left: 5px;
+    z-index: -1;
+    transition: .2s all;
+
+
+  }
+}
+
+
+.main-btn {
+  z-index: 99;
+  background: #000;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 14px 32px;
+
+  &::after {
+    width: 100%;
+    content: "";
+    height: 100%;
+    background: transparent;
+    border: 2px solid black;
+    bottom: -4px;
+    left: 4px;
+    position: absolute;
+    transition: all .1s linear;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.main-btn-lg {
+  font-size: 2rem;
+
+  &::after {
+    bottom: -6px;
+    left: 6px;
+  }
+}
+
+.light-btn {
+  border: none;
+  background: $main-color;
+  border-radius: 10px;
+}
+
+.light-btn-lg {
+  font-size: 1.5rem;
+}
+
+.btn-shadow {
+  box-shadow: 3px 1px 20px rgb(68 66 66 / 23%);
+}
+
+.big-top-margin {
+  margin-top: 8rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+//work section
+.badge-light {
+  background: $main-color !important;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.work-gallery {
+  .work {
+    //display: flex;
+    //justify-content: space-between;
+    margin-bottom: 250px;
+
+    .work-label {
+      color: $secondary-text-color;
+
+    }
+
+    .work-title {
+      font-weight: bolder;
+    }
+
+    .work-description {
+      margin: 30px 0;
+    }
+
+    .work-left {
+      //width: 50%;
+      padding-right: 25px;
+      margin-bottom: 50px;
+      min-height: 300px;
+    }
+
+
+    .work-right {
+      background: $main-color;
+      //width: 40%;
+      height: 400px;
+      position: relative;
+
+      .work-pattern {
+        position: absolute;
+        bottom: -45px;
+        left: -44px;
+        z-index: -1;
+        animation: floating 5s infinite;
+      }
+
+      .work-images-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        //box-shadow: 3px 2px 20px 0px #e7dddd;
+        .work-image-head {
+          width: 50%;
+          position: absolute;
+          top: 15%;
+          left: 38px;
+          z-index: 99;
+          box-shadow: 3px 1px 20px #444242;
+        }
+
+        .work-image-head-big {
+          width: 122%;
+          position: absolute;
+          top: 8%;
+          left: 38px;
+          z-index: 99;
+          box-shadow: 3px 1px 20px #444242;
+        }
+
+        .work-image-tail {
+          width: 50%;
+          position: absolute;
+          right: 23px;
+          bottom: 15%;
+          box-shadow: $main-shadow;
+        }
+      }
+    }
+  }
+}
+
+.what-i-do {
+  margin-bottom: 150px;
+
+  h1 {
+    font-weight: 900;
+    margin-bottom: 90px;
+  }
+
+  .ido-section {
+    margin-bottom: 90px;
+  }
+}
+
+footer {
+  min-height: 370px;
+  background: $main-color;
+  padding: 60px 30px;
+  position: relative;
+
+  h1 {
+    font-weight: bolder;
+  }
+
+  .call-me {
+    font-weight: 500;
+
+    a {
+      font-weight: 750;
+
+      &:after {
+        bottom: 5px !important;
+      }
+    }
+  }
+
+  .rights {
+    position: absolute;
+    bottom: -2px;
+    color: $secondary-text-color;
+  }
+}
+
+.secondary-text {
+  color: $secondary-text-color;
+  font-size: 1.1rem;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

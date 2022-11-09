@@ -1,0 +1,63 @@
+<template>
+<div>
+  <Loading :loading="isLoading" />
+  <div class="header">
+    <b-container style="height: 100%" class="d-flex flex-column justify-content-center">
+      <b-row>
+        <b-col md="2"></b-col>
+        <b-col md="8"  class="text-center">
+          <p class="secondary-text">PROJECT SHOWCASE</p>
+          <h1 class="main-headline mb-5">React Real-Time Chat Application</h1>
+          <p class="description mb-5">
+            this is a complete real-time chat application built with react, mysql and socket.io
+            <br> <a target="_blank" href="https://drive.google.com/file/d/1m-53py2cVoIlSTMYOeSHtoWN7nhEUzku/view?usp=sharing">video demo</a>
+             <br> <span class='note'>note: you can click the image to play the gallery</span>
+          </p>
+        </b-col>
+        <b-col md="2"></b-col>
+      </b-row>
+    </b-container>
+  </div>
+  <b-container>
+    <b-row>
+      <b-col md="12">
+        <div class="project-main-image">
+          <img @click="changeImage" ref="mainImage" :src="images[selectedImage]" alt="">
+        </div>
+
+      </b-col>
+    </b-row>
+  </b-container>
+</div>
+</template>
+
+<script>
+export default {
+name: "menhag",
+  data(){
+  return {
+    selectedImage:0,
+    images:[
+      '/images/portfolio/react_chat/1.webp',
+      '/images/portfolio/react_chat/2.webp',
+    ]
+  }
+  },
+  methods:{
+    changeImage(){
+      if (this.selectedImage >= this.images.length -1){
+        this.selectedImage = 0
+      }
+
+      this.$refs.mainImage.src = this.images[++this.selectedImage]
+      // window.scrollTo({top:document.querySelector('img').offsetTop  +900,behavior:'smooth'});
+
+    }
+  }
+
+}
+</script>
+
+<style scoped>
+
+</style>

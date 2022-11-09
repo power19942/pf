@@ -1,0 +1,42 @@
+$main-text-color: #000;
+$main-color: #F9EFE7;
+$line-color:#FFE872;
+$secondary-text-color:#B7B4B9;
+$main-shadow:3px 1px 20px #44424287;
+
+body {
+  padding: 10px;
+}
+nav {
+  display: flex;
+  background: $main-color;
+
+  .navbar-brand {
+    color: $main-text-color;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+
+  a.nav-link {
+    color: $main-text-color !important;
+    font-weight: bold;
+    position: relative;
+    z-index: 99;
+  }
+}
+
+a{
+  transition: all .2s
+}
+
+a:not(.main-btn):not(.throw-line):hover {
+  background: $main-color !important;
+  color:$main-text-color !important;
+}
+
+
+@import 'custom';
+@import "project";
+@import "resume";
+@import "spinner";
+@import "responsive";
