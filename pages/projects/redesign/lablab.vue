@@ -53,7 +53,7 @@ export default {
   methods: {
     changeImage() {
       this.loading = true;
-      if (this.selectedImage >= this.images.length - 1) {
+      if (this.selectedImage >= this.images.length -1) {
         this.selectedImage = -1;
       }
 

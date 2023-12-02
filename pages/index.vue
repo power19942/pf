@@ -72,6 +72,90 @@
           </b-row>
         </div>
 
+        <!--        Uber-->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">Uber Clone</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">Flutter</span>
+                  <span class="badge badge-light">Mapbox</span>
+                  <span class="badge badge-light">Firebase</span>
+                </div>
+                <div class="work-description">
+                  Uber clone made with flutter and Mapbox API
+                </div>
+
+                <nuxt-link to="/projects/mobile/uber" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    class="work-image-head"
+                    style="width:40%;top:0"
+                    src="/images/portfolio/uber/1.webp"
+                    alt=""
+                  />
+                  <img
+                    class="work-image-tail"
+                    style="width:40%;bottom:-5%"
+                    src="/images/portfolio/uber/2.webp"
+                    alt=""
+                  />
+
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
+        <!--        Sparaat-->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">Sparaat</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">Laravel</span>
+                  <span class="badge badge-light">Vue.js</span>
+                  <span class="badge badge-light">Debugging</span>
+                  <span class="badge badge-light">SysAdmin</span>
+                </div>
+                <div class="work-description">
+                Sparaat is a web and mobile app specialized in auto-spare parts. Sparaat helps the buyer searching for used or new spare parts and give them the opportunity to compare suppliers' prices and choose the best
+                </div>
+
+                <nuxt-link to="/projects/sparaat" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    class="work-image-head-big"
+                    src="/images/portfolio/sparaat/1.webp"
+                    alt=""
+                  />
+
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
          <!--        pydelivery-->
         <div class="work">
           <b-row>
@@ -185,24 +269,69 @@
           </b-row>
         </div>
 
-        <!--        Sparaat-->
+        <!--        Spring Boot-->
         <div class="work">
           <b-row>
             <b-col md="6" sm="12">
               <div class="work-left">
                 <div class="work-label">Latest Project</div>
-                <h2 class="work-title">Sparaat</h2>
+                <h2 class="work-title">Spring Boot School Management</h2>
                 <div class="tags-container">
-                  <span class="badge badge-light">Laravel</span>
-                  <span class="badge badge-light">Vue.js</span>
-                  <span class="badge badge-light">Debugging</span>
-                  <span class="badge badge-light">SysAdmin</span>
+                  <span class="badge badge-light">Java</span>
+                  <span class="badge badge-light">Spring Boot</span>
+                  <span class="badge badge-light">Spring Security</span>
+                  <span class="badge badge-light">Thymeleaf</span>
+                  <span class="badge badge-light">REST API</span>
+                  <span class="badge badge-light">Hal Explorer</span>
                 </div>
                 <div class="work-description">
-                Sparaat is a web and mobile app specialized in auto-spare parts. Sparaat helps the buyer searching for used or new spare parts and give them the opportunity to compare suppliers' prices and choose the best
+                  A simple CRUD application for school management created with Java and Spring Boot framework,
+                  <br/>
+                  the app provide an API for seamless integration with other services with API explorer for managing the API directly from the browser without third party REST clients
                 </div>
 
-                <nuxt-link to="/projects/sparaat" class="main-btn mt-5"
+                <nuxt-link to="/projects/spring_boot" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    style="width: 90%"
+                    class="work-image-head-big"
+                    src="/images/portfolio/spring_boot/1.webp"
+                    alt=""
+                  />
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
+
+        <!--        Ticketing -->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">Ticket reservation Microservices</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">Node.JS</span>
+                  <span class="badge badge-light">Typescript</span>
+                  <span class="badge badge-light">Message Broker</span>
+                  <span class="badge badge-light">Docker</span>
+                  <span class="badge badge-light">K8s</span>
+                </div>
+                <div class="work-description">
+                  this is a complete ticket reservation system implemented using typescript and Microservices architecture with CI/CD pipeline using github actions for testing and deployment
+                </div>
+
+                <nuxt-link to="/projects/ticketing" class="main-btn mt-5"
                   >see this project</nuxt-link
                 >
               </div>
@@ -213,7 +342,44 @@
                   <img
                     loading=lazy
                     class="work-image-head-big"
-                    src="/images/portfolio/sparaat/1.webp"
+                    src="/images/portfolio/ticketing/1.webp"
+                    alt=""
+                  />
+
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
+        <!--        Fancy-Theme -->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">WooCommerce Theme</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">Wordpress</span>
+                  <span class="badge badge-light">WooCommerce</span>
+                </div>
+                <div class="work-description">
+                  a custom wordpress theme with WooCommerce support
+                </div>
+
+                <nuxt-link to="/projects/fancy-theme" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    class="work-image-head-big"
+                    src="/images/portfolio/fancy-theme/1.webp"
                     alt=""
                   />
 

@@ -9,7 +9,7 @@ Vue.mixin({
   methods: {
     changeImage() {
       this.isLoading = true;
-      if (this.selectedImage >= this.images.length - 1) {
+      if (this.selectedImage >= this.images.length -1) {
         this.selectedImage = -1;
       }
 

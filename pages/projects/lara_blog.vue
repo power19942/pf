@@ -50,7 +50,7 @@ export default {
   },
   methods: {
     changeImage() {
-      if (this.selectedImage >= this.images.length - 1) {
+      if (this.selectedImage >= this.images.length -1) {
         this.selectedImage = -1
       }
 

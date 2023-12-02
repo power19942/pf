@@ -85,8 +85,8 @@ export default {
   },
   methods: {
     changeImage() {
-      if (this.selectedImage >= this.images.length - 1) {
-        this.selectedImage = 0
+      if (this.selectedImage >= this.images.length -1) {
+        this.selectedImage = -1
       }
       this.$refs.mainImage.src = this.images[++this.selectedImage]
       //window.scrollTo({top: document.querySelector('img').offsetTop + 900, behavior: 'smooth'});

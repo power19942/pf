@@ -45,8 +45,8 @@ name: "menhag",
   },
   methods:{
     changeImage(){
-      if (this.selectedImage >= this.images.length -1){
-        this.selectedImage = 0
+      if (this.selectedImage >= this.images.length -1 -1){
+        this.selectedImage = -1
       }
 
       this.$refs.mainImage.src = this.images[++this.selectedImage]
