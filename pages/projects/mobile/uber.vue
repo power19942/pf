@@ -9,7 +9,7 @@
           <p class="secondary-text">PROJECT SHOWCASE</p>
           <h1 class="main-headline mb-5">Uber Clone</h1>
           <p class="description mb-5">
-            Uber clone made with flutter and Mapbox API
+            Uber clone made with flutter, Firebase and Mapbox API with admin panel built with flutter web
 
             <br> <span class='note'>note: you can click the image to play the gallery</span>
           </p>
@@ -19,15 +19,21 @@
     </b-container>
   </div>
   <b-container>
-    <b-row>
-      <b-col md="12">
-        <div class="project-main-image">
-          <img @click="changeImage" ref="mainImage" :src="images[selectedImage]" alt="">
-        </div>
-
-      </b-col>
-    </b-row>
-  </b-container>
+        <b-row>
+           <b-col md="3"></b-col>
+          <b-col md="6">
+            <div class="project-main-image">
+              <img
+                @click="changeImage"
+                ref="mainImage"
+                :src="images[selectedImage]"
+                alt=""
+              />
+            </div>
+          </b-col>
+           <b-col md="3"></b-col>
+        </b-row>
+      </b-container>
 </div>
 </template>
 

@@ -7,7 +7,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "backup":"mv ./dist/.git './git dist backup'",
+    "restore": "mv './git dist backup/.git' ./dist "
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",

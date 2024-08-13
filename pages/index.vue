@@ -34,6 +34,85 @@
 
     <section class="work-gallery">
       <b-container>
+        <!--        Resume Builder-->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">Resume Builder SAAS</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">NextJS</span>
+                  <span class="badge badge-light">React</span>
+                  <span class="badge badge-light">SAAS</span>
+                </div>
+                <div class="work-description">
+                  A simple resume builder saas that allows users to build a resume in 5 minutes
+                </div>
+
+                <nuxt-link to="/projects/resume-builder" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    class="work-image-head-big"
+                    src="/images/portfolio/resume-builder/1.webp"
+                    alt=""
+                  />
+
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
+
+        <!--        Jobber-->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">Jobber App</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">Microservices</span>
+                  <span class="badge badge-light">NodeJs</span>
+                  <span class="badge badge-light">Elastic Stak</span>
+                  <span class="badge badge-light">Socket.IO</span>
+                </div>
+                <div class="work-description">
+                  obber App is a Fiverr clone built using microservices pattern for
+                  the backend and React for the frontend
+                </div>
+
+                <nuxt-link to="/projects/jobber" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    class="work-image-head-big"
+                    src="/images/portfolio/jobber/1.webp"
+                    alt=""
+                  />
+
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
         <!--        Freelancer-Hub-->
         <div class="work">
           <b-row>
@@ -85,7 +164,7 @@
                   <span class="badge badge-light">Firebase</span>
                 </div>
                 <div class="work-description">
-                  Uber clone made with flutter and Mapbox API
+                  Uber clone made with flutter, Firebase and Mapbox API
                 </div>
 
                 <nuxt-link to="/projects/mobile/uber" class="main-btn mt-5"
@@ -97,16 +176,15 @@
               <div class="work-right">
                 <div class="work-images-wrapper">
                   <img
-                    loading=lazy
                     class="work-image-head"
-                    style="width:40%;top:0"
-                    src="/images/portfolio/uber/1.webp"
+                    style="width:40%;top:-60px"
+                    src="/images/portfolio/uber/9.webp"
                     alt=""
                   />
                   <img
                     class="work-image-tail"
-                    style="width:40%;bottom:-5%"
-                    src="/images/portfolio/uber/2.webp"
+                    style="width:40%;bottom:-60px"
+                    src="/images/portfolio/uber/8.webp"
                     alt=""
                   />
 
@@ -146,6 +224,45 @@
                     loading=lazy
                     class="work-image-head-big"
                     src="/images/portfolio/sparaat/1.webp"
+                    alt=""
+                  />
+
+                </div>
+                <img class="work-pattern" src="~/assets/images/dot.svg" />
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+
+        <!--        Auction-->
+        <div class="work">
+          <b-row>
+            <b-col md="6" sm="12">
+              <div class="work-left">
+                <div class="work-label">Latest Project</div>
+                <h2 class="work-title">Auction App</h2>
+                <div class="tags-container">
+                  <span class="badge badge-light">Microservices</span>
+                  <span class="badge badge-light">.NET</span>
+                  <span class="badge badge-light">NextJs</span>
+                  <span class="badge badge-light">SignalR</span>
+                </div>
+                <div class="work-description">
+                  Auction App built using microservices pattern with .NET echosystem and NextJs
+                </div>
+
+                <nuxt-link to="/projects/auction" class="main-btn mt-5"
+                  >see this project</nuxt-link
+                >
+              </div>
+            </b-col>
+            <b-col md="6" sm="12">
+              <div class="work-right">
+                <div class="work-images-wrapper">
+                  <img
+                    loading=lazy
+                    class="work-image-head-big"
+                    src="/images/portfolio/auction/1.webp"
                     alt=""
                   />
 

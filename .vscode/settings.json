@@ -1,0 +1,7 @@
+{
+  "git.enabled": false,
+  "go.enableCodeLens": {
+    "runtest": false,
+  },
+  "vue.features.codeActions.enable": false,
+}
